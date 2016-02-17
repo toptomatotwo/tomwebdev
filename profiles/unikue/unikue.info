@@ -1,0 +1,9 @@
+name = Unikue Demo Profile
+description = Select this profile to install demo profile for Unikue theme.
+core = 7.x
+exclusive = 1
+dependencies[] = node
+files[] = unikue.profile
+
+version = "7.34"
+project = "drupal"
