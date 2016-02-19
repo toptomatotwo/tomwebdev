@@ -182,6 +182,12 @@ p.website-link a:hover {
   bottom: 40px;
   left: 20px;
 }
+@media screen and (max-width: 991px) {
+  #hello img#me {
+    bottom: 180px;
+    left: 0px;
+  }
+}
 #hello .one {
   background-color: #dadada;
   display: -moz-box;
@@ -861,7 +867,9 @@ ul.w-nav-menu {
   border: 0px solid red;
   padding-left: 0;
   width: 50%;
-  margin-left: 50%;
+  /* margin-left: 50% */
+  margin-left: 25%;
+  /* my mod */
 }
 
 .navbar {
@@ -880,7 +888,7 @@ ul.w-nav-menu {
 }
 
 .nav-link {
-  padding: 15px;
+  padding: 14px;
   -webkit-transition: all 500ms ease !important;
   -o-transition: all 500ms ease !important;
   transition: all 500ms ease !important;

@@ -615,7 +615,9 @@ ul.w-nav-menu {
   border:0px solid red;
   padding-left: 0;
   width:50%;
-  margin-left: 50%
+  /* margin-left: 50% */
+ margin-left: 25%; /* my mod */
+
 }
 .navbar {
   position: fixed;
@@ -632,7 +634,7 @@ ul.w-nav-menu {
   box-shadow: rgba(0, 0, 0, 0.02) 1px 1px 2px 2px;
 }
 .nav-link {
-  padding: 15px;
+  padding: 14px;
   -webkit-transition: all 500ms ease !important;
   -o-transition: all 500ms ease !important;
   transition: all 500ms ease !important;

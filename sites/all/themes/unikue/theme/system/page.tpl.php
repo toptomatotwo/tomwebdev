@@ -72,11 +72,14 @@
  * @ingroup themeable
  */
 ?>
+
 <div id="page-wrapper">
+
     <?php include_once '_top.inc';?>
     <div id="main-wrapper">
         <div class="section">
                 <div class="w-container">
+
                 <?php if(isset($messages)):?>
                     <div id="messages">
                         <?php print $messages; ?>
@@ -97,5 +100,6 @@
         </div>
     </div>
     <?php include_once '_bottom.inc';?>
+
 </div> <!-- /#page, /#page-wrapper -->
 

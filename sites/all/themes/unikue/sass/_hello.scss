@@ -1,4 +1,5 @@
 #hello {
+
 	#triangle {
 		position: absolute;
 		top:0px;
@@ -21,7 +22,14 @@
 		position:absolute;
 		bottom:40px;
 		left:20px;
-	}
+		@media screen and (max-width: 991px) {
+  			bottom:180px;
+			left:0px;
+  		}
+  	}
+	
+	
+
 	.one {
 		background-color:#dadada;
 		

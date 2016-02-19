@@ -257,6 +257,7 @@ textarea.w-select {
   margin-right: auto;
   /* max-width: 940px; */
   width:90%;
+  overflow: hidden;
 }
 .w-container:before,
 .w-container:after {
@@ -433,6 +434,19 @@ textarea.w-select {
   display: none !important;
 }
 @media screen and (max-width: 991px) {
+  body::before{
+   content: "max-width:991 base.css"; 
+
+    font-weight: bold; 
+    display: block; 
+    text-align: center; 
+    background: rgba(255,255,0, 0.9); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 99; 
+}
   .w-container {
     max-width: 728px;
   }
