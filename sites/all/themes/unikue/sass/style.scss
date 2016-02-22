@@ -43,7 +43,11 @@
 @import "portfolio_page.scss";
 @import "hello.scss";
 
- 
+ /* TEMP */
+ .w-container {
+  /* border-left: 1px solid #000;
+  border-right: 1px solid #000; */
+ }
 body {
   padding-top: 90px;
   font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -616,7 +620,7 @@ ul.w-nav-menu {
   padding-left: 0;
   width:50%;
   /* margin-left: 50% */
- margin-left: 25%; /* my mod */
+ display: inline;
 
 }
 .navbar {
@@ -777,7 +781,10 @@ ul.w-nav-menu {
 .social-div {
   margin-right: 20px;
   padding-top: 16px;
-  float: right;
+  /*float: right; */
+  position: absolute;
+  top:0;
+  right:0;
 }
 .social-div.in-footer {
   margin-right: 0px;

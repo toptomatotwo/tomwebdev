@@ -1,5 +1,4 @@
 #hello {
-
 	#triangle {
 		position: absolute;
 		top:0px;
@@ -27,9 +26,6 @@
 			left:0px;
   		}
   	}
-	
-	
-
 	.one {
 		background-color:#dadada;
 		
@@ -67,5 +63,19 @@
 	.four {
 		background-color:#938180;
 	}
+}
+@media screen and (max-width: 479px) {
+	.hello {
+		width:100% !important;
+		clear:both;
+	}
+	.two {display:none;}
 
+	#hello {
+		padding-bottom: 0;
+	}
+	#hello img#me {
+    bottom: 0;
+    left: 0px;
+	}
 }

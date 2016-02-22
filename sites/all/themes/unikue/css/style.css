@@ -36,6 +36,7 @@
 /*
 $navLinkSelBgColor:#ec643e;
 */
+/* FOUR COLORS */
 @keyframes zoomInSlideDownFadeZoom {
   0% {
     background-size: 100% 100%;
@@ -81,6 +82,7 @@ a.w-nav-brand {
   display: table-cell;
   font-weight: 700;
   letter-spacing: -.01em;
+  width: 50%;
   transition: all 500ms ease !important;
 }
 a.w-nav-brand span {
@@ -98,28 +100,9 @@ a.w-nav-brand:active {
   color: #a5142d;
 }
 
-.lexwebdev-front-page {
-  display: block;
-  font-size: 1.5em;
-  margin-bottom: 0;
-  line-height: 1;
-  position: relative;
-  top: -18px;
-}
-
-.lwdsmall {
-  text-align: center;
-  font-family: arial;
-  letter-spacing: 1px;
-  font-size: .25em;
-  display: block;
-  margin-top: 0;
-  padding-top: 0px;
-  line-height: 1;
-  position: relative;
-  font-weight: 100;
-  top: -10px;
-  font-variant: small-caps;
+.region-navigation {
+  display: inline-block;
+  width: 50%;
 }
 
 #photo-credit {
@@ -221,6 +204,31 @@ p.website-link a:hover {
 }
 #hello .four {
   background-color: #938180;
+}
+
+@media screen and (max-width: 479px) {
+  .hello {
+    width: 100% !important;
+    clear: both;
+  }
+
+  .two {
+    display: none;
+  }
+
+  #hello {
+    padding-bottom: 0;
+  }
+
+  #hello img#me {
+    bottom: 0;
+    left: 0px;
+  }
+}
+/* TEMP */
+.w-container {
+  /* border-left: 1px solid #000;
+  border-right: 1px solid #000; */
 }
 
 body {
@@ -868,8 +876,7 @@ ul.w-nav-menu {
   padding-left: 0;
   width: 50%;
   /* margin-left: 50% */
-  margin-left: 25%;
-  /* my mod */
+  display: inline;
 }
 
 .navbar {
@@ -1046,7 +1053,10 @@ ul.w-nav-menu {
 .social-div {
   margin-right: 20px;
   padding-top: 16px;
-  float: right;
+  /*float: right; */
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .social-div.in-footer {
