@@ -3,6 +3,10 @@ h2.pacifico {
   font: 400 120px/1.5 'Pacifico', Helvetica, sans-serif;
   color:#2c2c2c;
 }
+/*TEMP*/
+#main-wrapper {
+  min-height: 500px;
+}
 
 @font-face {
   font-family: 'woozy-icons';

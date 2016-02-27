@@ -27,6 +27,7 @@
  * @ingroup views_templates
  */
 ?>
+
 <div class="<?php print $classes; ?>">
 <?php print render($title_prefix); ?>
 <?php if ($title): ?>
@@ -55,22 +56,7 @@
     <div class="w-row w-hidden-medium work-row">
         <?php print $rows;?>
     </div>
-<!--    <section class="hero-section">
-        <div class="w-container">
-            <div class="w-row">
-                <div class="w-col w-col-4 hero-column">
-                    <div class="line-hero"></div>
-                    <div class="line-hero"></div>
-                </div>
-                <div class="w-col w-col-4 hero-column"><a class="button hero" href="#">I’M Happy, BUY unique NOW!</a>
-                </div>
-                <div class="w-col w-col-4">
-                    <div class="line-hero"></div>
-                    <div class="line-hero"></div>
-                </div>
-            </div>
-        </div>
-    </section>-->
+
 <?php elseif ($empty): ?>
     <div class="view-empty">
         <?php print $empty; ?>

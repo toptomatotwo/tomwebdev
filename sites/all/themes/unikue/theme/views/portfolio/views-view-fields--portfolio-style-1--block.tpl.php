@@ -26,15 +26,24 @@
 $thumbnail = '';
 if(isset($row->field_field_portfolio_thumbnail[0])) {
     $thumbnail = file_create_url($row->field_field_portfolio_thumbnail[0]['raw']['uri']);
+    //krumo($row->field_field_portfolio_thumbnail);
 }
 ?>
 <div class="w-col w-col-4 portfolio-row">
-    <a style=" background-image: url('<?php print $thumbnail;?>'); " class="w-inline-block portfolio-photo portfolio-1" href="<?php print drupal_get_path_alias('node/').$row->nid;?>">
+    
+    <?php print l("<div class='portfolio-photo-overlay'></div>", 
+              'node/' . $row->nid, 
+               array(
+                 'attributes' => array(
+                   'class' => array('w-inline-block','portfolio-photo','portfolio-1'),
+                   'style'=> array('background-image:url('.$thumbnail.')')),
+                 'html' => TRUE), ''
+                   ); ?>
 
         <div class="portfolio-photo-overlay">
-            <!-- <div class="portfolio-title"><?php print $row->field_thumb_url;?></div> -->
-            <div class="thumb-url"><?php if(isset($fields['field_thumb_url'])): print $fields['field_thumb_url']->content; endif;?></div>
-            <?php if(isset($fields['field_portfolio_author'])): print $fields['field_portfolio_author']->content; endif;?>
+            
+            <!--<div class="thumb-url"><?php if(isset($fields['field_thumb_url'])): print $fields['field_thumb_url']->content; endif;?></div> -->
+            <!--<?php if(isset($fields['field_portfolio_author'])): print $fields['field_portfolio_author']->content; endif;?> -->
         </div>
     </a>
 </div>
@@ -52,4 +61,3 @@ if(isset($row->field_field_portfolio_thumbnail[0])) {
     <?php print $field->content; ?>
     <?php print $field->wrapper_suffix; ?>
 <?php endforeach; ?>
-<!-- <?php var_dump($row); ?> -->
