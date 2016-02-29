@@ -26,26 +26,21 @@
 $thumbnail = '';
 if(isset($row->field_field_portfolio_thumbnail[0])) {
     $thumbnail = file_create_url($row->field_field_portfolio_thumbnail[0]['raw']['uri']);
-    //krumo($row->field_field_portfolio_thumbnail);
+    $sitename = $row->field_field_thumb_url[0]['rendered']['#markup'];
+    
 }
 ?>
 <div class="w-col w-col-4 portfolio-row">
     
-    <?php print l("<div class='portfolio-photo-overlay'></div>", 
+    <?php print link_custom("<div class='portfolio-photo-overlay'><div class='thumb-url'><div class='field-content'>".$sitename."</div></div></div>", 
               'node/' . $row->nid, 
                array(
                  'attributes' => array(
                    'class' => array('w-inline-block','portfolio-photo','portfolio-1'),
                    'style'=> array('background-image:url('.$thumbnail.')')),
-                 'html' => TRUE), ''
+                 'html' => TRUE), '<div class="portfolio-photo-overlay"></div>'
                    ); ?>
 
-        <div class="portfolio-photo-overlay">
-            
-            <!--<div class="thumb-url"><?php if(isset($fields['field_thumb_url'])): print $fields['field_thumb_url']->content; endif;?></div> -->
-            <!--<?php if(isset($fields['field_portfolio_author'])): print $fields['field_portfolio_author']->content; endif;?> -->
-        </div>
-    </a>
 </div>
 <?php unset($fields['title']);?>
 <?php unset($fields['field_portfolio_author']);?>
