@@ -39,6 +39,7 @@
   display: table-cell;
   font-weight:700;
   letter-spacing:-.01em;
+  width:50%;
   transition: all 500ms ease !important; 
     span{
       font-family: monospace;
@@ -55,32 +56,10 @@
     &:active{
      color:$navLinkSelBgColor;
     };
-
- }
-
-.lexwebdev-front-page {
-	display: block;
-	font-size:1.5em;
-	margin-bottom: 0;
-	line-height: 1;
-	position: relative;
-	top:-18px;
 }
-
-
-.lwdsmall {
-    text-align: center;
-    font-family: arial;
-    letter-spacing: 1px;
-    font-size: .25em;
-    display: block;
-    margin-top: 0;
-    padding-top: 0px;
-    line-height: 1;
-    position: relative;
-    font-weight: 100;
-    top: -10px;
-    font-variant: small-caps;
+.region-navigation {
+  display: inline-block;
+  width:50%;
 }
 
 #photo-credit {

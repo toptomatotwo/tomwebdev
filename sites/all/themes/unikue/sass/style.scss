@@ -43,7 +43,11 @@
 @import "portfolio_page.scss";
 @import "hello.scss";
 
- 
+ /* TEMP */
+ .w-container {
+  /* border-left: 1px solid #000;
+  border-right: 1px solid #000; */
+ }
 body {
   padding-top: 90px;
   font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -615,7 +619,9 @@ ul.w-nav-menu {
   border:0px solid red;
   padding-left: 0;
   width:50%;
-  margin-left: 50%
+  /* margin-left: 50% */
+ display: inline;
+
 }
 .navbar {
   position: fixed;
@@ -632,7 +638,7 @@ ul.w-nav-menu {
   box-shadow: rgba(0, 0, 0, 0.02) 1px 1px 2px 2px;
 }
 .nav-link {
-  padding: 15px;
+  padding: 14px;
   -webkit-transition: all 500ms ease !important;
   -o-transition: all 500ms ease !important;
   transition: all 500ms ease !important;
@@ -775,7 +781,10 @@ ul.w-nav-menu {
 .social-div {
   margin-right: 20px;
   padding-top: 16px;
-  float: right;
+  /*float: right; */
+  position: absolute;
+  top:0;
+  right:0;
 }
 .social-div.in-footer {
   margin-right: 0px;

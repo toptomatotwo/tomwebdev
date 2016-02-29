@@ -34,11 +34,13 @@
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?> >
+    <div id="widthMonitor" style="position:absolute;top:0;left:0;height:50px;width:50px;background-color:#000;color:#fff;z-index:100000;"></div>
 <?php print $page_top; ?>
 <?php print $page; ?>
 <?php print $page_bottom;
 print $scripts;
 if (isset($footer_code)): print $footer_code; endif;
 ?>
+<script>jQuery('#widthMonitor').html(jQuery.windowWidth);</script>
 </body>
 </html>

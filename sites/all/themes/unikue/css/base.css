@@ -3,6 +3,10 @@ h2.pacifico {
   font: 400 120px/1.5 'Pacifico', Helvetica, sans-serif;
   color:#2c2c2c;
 }
+/*TEMP*/
+#main-wrapper {
+  min-height: 500px;
+}
 
 @font-face {
   font-family: 'woozy-icons';
@@ -19,11 +23,18 @@ h2.pacifico {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  font-size:30px;
   /* Better Font Rendering =========== */
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+[class*=" w-icon-"]:hover {
+      color:#e61c3f;
+    }
+
+
 .w-icon-slider-right:before {
   content: "\e600";
 }
@@ -255,8 +266,9 @@ textarea.w-select {
 .w-container {
   margin-left: auto;
   margin-right: auto;
-  /* max-width: 940px; */
-  width:90%;
+  max-width: 940px;
+  /* width:90%; */
+  overflow: hidden;
 }
 .w-container:before,
 .w-container:after {
@@ -432,7 +444,20 @@ textarea.w-select {
 .w-hidden-main {
   display: none !important;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) { /* TABLET LANDSCAPE MIDWAY */
+  body::before{
+   content: "max-width:991 base.css"; 
+
+    font-weight: bold; 
+    display: block; 
+    text-align: center; 
+    background: rgba(255,255,0, 0.9); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 99; 
+}
   .w-container {
     max-width: 728px;
   }
@@ -577,7 +602,7 @@ textarea.w-select {
   .w-col-medium-offset-11 {
     margin-left: 91.66666666666666%;
   }
-}
+} /* END @media screen and (max-width: 991px)  */ 
 @media screen and (max-width: 767px) {
   .w-hidden-main {
     display: inherit !important;
@@ -706,8 +731,22 @@ textarea.w-select {
   .w-col-small-offset-11 {
     margin-left: 91.66666666666666%;
   }
+} /* END @media screen and (max-width: 767px) { */
+
+@media screen and (max-width: 479px) { /* VERY SMALL, LESS THAN IPHONE PORTRAIT MAX WIDTH */
+    body::before{
+   content: "max-width:479 base.css"; 
+
+    font-weight: bold; 
+    display: block; 
+    text-align: center; 
+    background: rgba(255,255,0, 0.9); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 111199; 
 }
-@media screen and (max-width: 479px) {
   .w-container {
     max-width: none;
   }
@@ -834,7 +873,7 @@ textarea.w-select {
   .w-col-tiny-offset-11 {
     margin-left: 91.66666666666666%;
   }
-}
+}/* END @media screen and (max-width: 479px) */
 .w-widget {
   position: relative;
 }
@@ -1058,6 +1097,7 @@ textarea.w-select {
   left: 0;
   right: 0;
   width: 100%;
+  background-color:rgba(191,171,170,0.5)
 }
 .w-nav-overlay .w--nav-menu-open {
   top: 0;
@@ -1104,15 +1144,24 @@ textarea.w-select {
 .w-nav[data-collapse="all"] .w-nav-button {
   display: block;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) { /*MIDWAY TABLET LANDSCAPE*/
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
   }
+  .w--nav-menu-open {
+    margin:0 auto;
+  }
   .w-nav[data-collapse="medium"] .w-nav-button {
     display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -27px;
+    bottom: -47px;
   }
-}
-@media screen and (max-width: 767px) {
+  a.w-nav-brand {width:100% !important;}
+} /* END @media screen and (max-width: 991px)  */
+
+@media screen and (max-width: 767px) { /* TABLET PORTRAIT MAX-WIDTH */
   .w-nav[data-collapse="small"] .w-nav-menu {
     display: none;
   }
@@ -1122,15 +1171,17 @@ textarea.w-select {
   .w-nav-brand {
     padding-left: 10px;
   }
-}
-@media screen and (max-width: 479px) {
+} /* END @media screen and (max-width: 767px)  */
+
+@media screen and (max-width: 479px) { /* BIGGER THAN IPHONE PORTRAIT MAX??*/
   .w-nav[data-collapse="tiny"] .w-nav-menu {
     display: none;
   }
   .w-nav[data-collapse="tiny"] .w-nav-button {
     display: block;
   }
-}
+} /* END @media screen and (max-width: 479px)  */
+
 .w-ix-emptyfix:after {
   content: "";
 }
