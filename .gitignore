@@ -17,6 +17,8 @@ sites/all/README.txt
 sites/all/modules/README.txt
 sites/all/themes/README.txt
 sites/default/settings.php
+temp/wamp/tmp/devel_themer/
+temp/*
 
 # Ignore everything but the "sites" folder ( for non core developer )
 #.htaccess
