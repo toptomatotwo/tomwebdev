@@ -2013,8 +2013,9 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
   }
   .social-div {
     display: block;
-    padding-top: 13px;
+    padding-top: 5px;
     z-index:100;
+    margin-right: 5px;
   }
   .social-div.in-footer {
     display: block;
@@ -2163,8 +2164,8 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
 }
 @media (max-width: 479px) {
   .navbar {
-    height:50px;
-    padding-top: 10px;
+    height:55px;
+    padding-top: 15px;
     padding-bottom: 10px;
     position: fixed;
   }
