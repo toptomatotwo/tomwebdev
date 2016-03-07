@@ -782,6 +782,7 @@ textarea.w-select {
   }
   .w-col {
     width: 100%;
+    padding-top: 37px;
   }
   .w-col-tiny-3 {
     width: 25%;
