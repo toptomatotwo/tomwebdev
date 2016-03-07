@@ -752,7 +752,7 @@ textarea.w-select {
 } /* END @media screen and (max-width: 767px) { */
 
 @media screen and (max-width: 479px) { /* VERY SMALL, LESS THAN IPHONE PORTRAIT MAX WIDTH */
-     body::before{
+    /*  body::before{
    content: "max-width:479 base.css"; 
 
     font-weight: bold; 
@@ -764,7 +764,7 @@ textarea.w-select {
     left: 0; 
     right: 0; 
     z-index: 111199; 
-} 
+} */
   .w-container {
     max-width: none;
   }
