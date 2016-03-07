@@ -8,7 +8,7 @@
  * Overrides theme_menu_tree().
  */
 function unikue_menu_tree(&$variables) {
-  return '<ul class="w-nav-menu nav menu" role="navigation">' . $variables['tree'] . '</ul>';
+  return '<ul class="w-nav-menu nav menu twd" role="navigation">' . $variables['tree'] . '</ul>';
 }
 
 /**

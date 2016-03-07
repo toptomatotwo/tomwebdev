@@ -1813,6 +1813,9 @@
             tram(data.menu)
                 .add(transConfig)
                 .set({ y: -offsetY }).start({ y: 0 });
+
+            console.log('open func running');
+            jQuery('ul.w-nav-menu').removeClass('twd');   
         }
 
         function setBodyHeight(data) {
@@ -1875,7 +1878,7 @@
                     data.overlay.attr('style', '').hide();
                 }
             }
-        }
+        } /* END CLOSE */
 
         // Export module
         return api;
@@ -2336,4 +2339,5 @@
         {"slug":"scroll-line-from-left-2","name":"Scroll Line from left 2","value":{"style":{"opacity":0,"width":"0px"},"triggers":[{"type":"scroll","offsetBot":"20%","stepsA":[{"opacity":1,"width":"100%","transition":"opacity 500ms ease-in-out 0ms, width 800ms ease-in-out 0ms"}],"stepsB":[]}]}}
     ]);
 
-})(jQuery)
+    
+    })(jQuery)

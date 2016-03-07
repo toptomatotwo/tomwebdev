@@ -41,6 +41,22 @@
 print $scripts;
 if (isset($footer_code)): print $footer_code; endif;
 ?>
+<script>
+    //alert('loaded');
+        //jQuery('ul.twd li a').click(function(){
+        jQuery('ul.w-nav-menu li a').click(function(){
+            if(jQuery('ul.w-nav-menu').hasClass('twd')){
+                return
+                } else {
+            jQuery('ul.w-nav-menu').slideUp('10000');
+            jQuery('.menu-button').removeClass('w--open');
+            jQuery('.w-nav-overlay').css('display', 'none');
+            //jQuery('.w-nav-overlay').css('height', '0');
+            jQuery('.menu-button').trigger('click');
+            //close();
+            }
+        }); 
+</script>
 <script>jQuery('#widthMonitor').html(jQuery.windowWidth);</script>
 </body>
 </html>

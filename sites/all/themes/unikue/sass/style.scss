@@ -1982,6 +1982,13 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
   width: 0px;
 }
 @media (max-width: 991px) {
+  body {
+    padding-top: 65px
+  }
+  .navbar {
+    padding:0;
+    height:65px;
+  }
   .staff-1 {
     width: 150px;
     height: auto;
@@ -2005,7 +2012,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
     color: white;
   }
   .social-div {
-    display: none;
+    display: block;
     padding-top: 13px;
   }
   .social-div.in-footer {
@@ -2154,6 +2161,13 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
   }
 }
 @media (max-width: 479px) {
+  .navbar {
+    height:50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+  }
+
   .staff-1 {
     height: auto;
   }

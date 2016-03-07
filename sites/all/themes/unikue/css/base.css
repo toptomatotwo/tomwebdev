@@ -44,6 +44,11 @@ h2.pacifico {
 .w-icon-nav-menu:before {
   content: "\e602";
 }
+
+.w-icon-nav-menu:hover {
+color:#e61c3f
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -604,6 +609,19 @@ textarea.w-select {
   }
 } /* END @media screen and (max-width: 991px)  */ 
 @media screen and (max-width: 767px) {
+    body::before{
+   content: "max-width:767 base.css"; 
+
+    font-weight: bold; 
+    display: block; 
+    text-align: center; 
+    background: rgba(255,255,0, 0.9); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 99; 
+}
   .w-hidden-main {
     display: inherit !important;
   }
@@ -734,7 +752,7 @@ textarea.w-select {
 } /* END @media screen and (max-width: 767px) { */
 
 @media screen and (max-width: 479px) { /* VERY SMALL, LESS THAN IPHONE PORTRAIT MAX WIDTH */
-    body::before{
+     body::before{
    content: "max-width:479 base.css"; 
 
     font-weight: bold; 
@@ -746,7 +764,7 @@ textarea.w-select {
     left: 0; 
     right: 0; 
     z-index: 111199; 
-}
+} 
   .w-container {
     max-width: none;
   }
@@ -1145,6 +1163,7 @@ textarea.w-select {
   display: block;
 }
 @media screen and (max-width: 991px) { /*MIDWAY TABLET LANDSCAPE*/
+  
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
   }
@@ -1152,12 +1171,26 @@ textarea.w-select {
     margin:0 auto;
   }
   .w-nav[data-collapse="medium"] .w-nav-button {
-    display: block;
+  /*  display: block;
     position: absolute;
     left: 50%;
     margin-left: -27px;
     bottom: -47px;
+    padding:0;
+*/
+    display: block;
+    position: fixed;
+    left: 50%;
+    margin-left: -37px;
+    top: 65px;
+    background-image:url('/sites/all/themes/unikue/img/tri_75.png');
+    background-repeat: no-repeat; 
+    width:75px;
+    height:37px;
+    text-align:center;
+    padding:0;
   }
+
   a.w-nav-brand {width:100% !important;}
 } /* END @media screen and (max-width: 991px)  */
 
@@ -1174,6 +1207,19 @@ textarea.w-select {
 } /* END @media screen and (max-width: 767px)  */
 
 @media screen and (max-width: 479px) { /* BIGGER THAN IPHONE PORTRAIT MAX??*/
+  .w-nav[data-collapse="medium"] .w-nav-button {
+      display: block;
+      position: fixed;
+      left: 50%;
+      margin-left: -37px;
+      top: 50px;
+      background-image:url('/sites/all/themes/unikue/img/tri_75.png');
+      background-repeat: no-repeat; 
+      width:75px;
+      height:37px;
+      text-align:center;
+  }
+
   .w-nav[data-collapse="tiny"] .w-nav-menu {
     display: none;
   }
