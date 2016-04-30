@@ -12,7 +12,7 @@
     var woozy = { w: woozy };
     woozy.init = function () {
         'use strict';
-
+        
         var api = {};
         var modules = {};
         var primary = [];
@@ -1788,7 +1788,8 @@
             if (animOver) setMenuHeight(data);
 
             // No transition for immediate
-            if (immediate) return;
+             //if (immediate) {alert('imediate'); return;} else {alert('not imediate');} 
+             if (immediate) return;
 
             var transConfig = 'transform ' + config.duration + 'ms ' + config.easing;
 
@@ -1797,6 +1798,9 @@
                 data.overlay.show()
                     .append(data.menu)
                     .height(menuHeight);
+                console.log('data overlay exists');
+            } else {
+                console.log('no data overlay?');
             }
 
             // Over left/right
@@ -1816,6 +1820,7 @@
 
             console.log('open func running');
             jQuery('ul.w-nav-menu').removeClass('twd');   
+            //alert('open');
         }
 
         function setBodyHeight(data) {

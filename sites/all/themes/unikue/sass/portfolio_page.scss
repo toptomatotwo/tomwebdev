@@ -15,3 +15,65 @@ p.website-link a:hover {
 	font-weight: 500;
 	text-decoration: underline;
 }
+
+/*$tablet-landscape:769px 1024px; 
+$tablet-landscape-min:769px;
+$tablet-portrait:581px 768px; */
+body.page-type-portfolio {
+	@media screen and (min-width:767px) and (max-width:991px) { /* FOR TABLE PORTRAIT, OVERRIDES EXISTING STYLES */
+		.menu-button { display:none !important; }
+		.w-nav-brand {display:inline;width:inherit !important;}
+		.button {font-size:11px;padding:10px 10px;margin-left: 10px;}
+		.button-single-2 {font-size: 20px !important}
+		.button-single {padding-top: 5px;}
+	}
+	@media screen and (max-width: 767px) { 
+		.content {
+			padding-top:0px;
+			}
+		.w-col {
+		    width: 100%;
+		    padding-top: 50px;
+			}
+		.button-single {
+		    position: relative;
+		    top:17px; 
+			
+			.button-single-2 {
+		    	background-color:#f6f6f6;
+		    		}
+		   		}
+		.button-single-1 {
+		    display: none;
+		 	}
+		  .button-single-3 {
+		    display: none;
+		  }	
+		}
+
+	@media screen and (max-width: 479px) { 
+		.content {
+			padding-top:0px;
+			}
+		.w-col {
+		    width: 100%;
+		    padding-top: 20px;
+		  }
+		.button-single {
+		    position: relative;
+		    top:20px;
+		    .button-single-2 {
+		    	background-color:#f6f6f6;
+		    	}
+		   	}  
+		.button-single-1 {
+		    display: none;
+			}
+		  .button-single-3 {
+		    display: none;
+		  }  	
+		}
+	.dot-container {
+		display: none;
+		}	
+	}	

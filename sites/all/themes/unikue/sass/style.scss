@@ -36,14 +36,15 @@
 
 /* 1. Boddy */
 
+
+/* TEMP */ 
 @import "mixins.scss";
-@import "colors.scss";
+@import "colors.scss"; 
 @import "typography.scss";
-@import "header.scss";
+@import "header.scss"; 
 @import "portfolio_page.scss";
 @import "hello.scss";
 
- /* TEMP */
  .w-container {
   /* border-left: 1px solid #000;
   border-right: 1px solid #000; */
@@ -107,7 +108,7 @@ h5 {
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
-}
+} 
 h6 {
   margin-top: 10px 0 10px;
   font-size: 12px;
@@ -383,8 +384,13 @@ content:"\e903";
 .service-row .w-col {
   border-right: 1px solid #ebebeb;
 }
+
 .service-row .w-col:last-child {
   border: none;
+}
+
+.service-row  .w-col-4 h5 + p {
+  display: none;  
 }
 .service-row {
   margin-top: 25px;
@@ -657,6 +663,14 @@ ul.w-nav-menu {
   background-color: $navLinkSelBgColor;
   color: white;
   font-weight: 700;
+}
+
+body.page-type-portfolio {
+  @media screen and (max-width: 767px) {
+    .w-nav-button {
+      display:none !important; 
+    }
+  }
 }
 
 /* 9. Testimonials */
@@ -2026,7 +2040,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
     color: #373c40;
   }
   .menu-button.w--open {
-    background-color: #22a966;
+    /* background-color: #22a966; */
   }
   .button-single {
     float: right;
@@ -2065,7 +2079,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
     z-index: 6;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px) { /* TABLET PORTRAIT */
   body {
     padding-top: 0px;
   }
@@ -2085,7 +2099,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
     display: none;
   }
   .navbar {
-    position: relative;
+    position: fixed;
   }
   .logo-slider {
     position: relative;
@@ -2161,6 +2175,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
   .column-iphone {
     margin-top: 34px;
   }
+  
 }
 @media (max-width: 479px) {
   .navbar {
@@ -2184,6 +2199,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
   }
   .right-arrow {
     margin-top: 115px;
+  
   }
   .left-arrow {
     margin-top: 115px;
@@ -2197,9 +2213,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
   .menu-button {
     padding: 14px;
   }
-  .button-single {
-    display: none;
-  }
+  
   .header {
     height: 600px;
   }
@@ -2276,4 +2290,7 @@ html.w-mod-js.w-mod-no-ios *[data-ix="scroll-line-from-left-2"] {
     padding-left: 10px;
     line-height: 30px;
   }
-}
+  .icon-drupal {
+    top:22px;
+  }
+}      

@@ -22,6 +22,7 @@ function unikue_preprocess_html(&$vars) {
     drupal_add_js($themepath . '/js/main.js');;
     drupal_add_js($themepath . '/js/woozy.js');
     drupal_add_js($themepath . '/js/twd.js');
+    drupal_add_js($themepath . '/js/jquery-ui.min.js');
 
 
 ///////////////////////////////////////// Construct page title //////////////////////////////////////////////////////.

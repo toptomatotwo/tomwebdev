@@ -34,29 +34,31 @@
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?> >
-    <div id="widthMonitor" style="position:absolute;top:0;left:0;height:50px;width:50px;background-color:#000;color:#fff;z-index:100000;"></div>
+    <div id="widthMonitor" style="position:fixed;width:50px;height:50px;top:0;left:0;background-color:#000;color:#fff;z-index:100000"></div>
+    
 <?php print $page_top; ?>
 <?php print $page; ?>
+
+
 <?php print $page_bottom;
 print $scripts;
 if (isset($footer_code)): print $footer_code; endif;
 ?>
 <script>
-    //alert('loaded');
-        //jQuery('ul.twd li a').click(function(){
+    
         jQuery('ul.w-nav-menu li a').click(function(){
             if(jQuery('ul.w-nav-menu').hasClass('twd')){
-                return
+                return;
                 } else {
             jQuery('ul.w-nav-menu').slideUp('10000');
             jQuery('.menu-button').removeClass('w--open');
             jQuery('.w-nav-overlay').css('display', 'none');
-            //jQuery('.w-nav-overlay').css('height', '0');
+    
             jQuery('.menu-button').trigger('click');
             //close();
             }
         }); 
 </script>
-<script>jQuery('#widthMonitor').html(jQuery.windowWidth);</script>
+
 </body>
 </html>

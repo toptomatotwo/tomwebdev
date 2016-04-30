@@ -53,7 +53,8 @@
 <?php endif; ?>
 
 <?php if ($rows): ?>
-    <div class="w-row w-hidden-medium work-row">
+    <!-- <div class="w-row w-hidden-medium work-row"> -->
+    <div class="w-row work-row">
         <?php print $rows;?>
     </div>
 

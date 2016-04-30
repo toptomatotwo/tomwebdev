@@ -10,4 +10,16 @@
 	jQuery.windowHeight = jQuery(window).height();
 	jQuery('#widthMonitor').html(jQuery.windowWidth);
                       });
+
+  	/*
+  	function showInfo(){
+        var selectedEffect = 'slide';
+        var options = {};
+        $('#info').toggle(selectedEffect, options, 500);       
+    }
+    $('#info').click(function(){
+        showInfo();
+        })
+ */
+
 })

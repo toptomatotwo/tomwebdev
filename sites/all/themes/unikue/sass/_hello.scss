@@ -8,24 +8,24 @@
 		width:90px;
 		height:45px;
 	}
+	h2 {
+		margin:0 !important;
+	}
+	.content {
+		overflow: hidden;
+	}
 	.hello {
 		width:50%;
 		height:300px;
 		float:left;
 		position:relative;
 	}
-	h2 {
-		margin:0 !important;
-	}
-	img#me {
-		position:absolute;
-		bottom:40px;
-		left:20px;
-		@media screen and (max-width: 991px) {
-  			bottom:180px;
-			left:0px;
-  		}
-  	}
+	@media screen and (min-width: 480px) { /*TAB PORTRAIT */
+		.hello:nth-child(3) {
+			clear:left;
+			}
+		}
+	
 	.one {
 		background-color:#dadada;
 		
@@ -37,34 +37,87 @@
     	-webkit-box-pack: center;
     	-webkit-box-align: center
 	}
+	
 	.two {
-		background-color:#bfabaa;
-		
-	}
+		background-color: #e61c3f;
+    	color: #a5142d;
+	    text-transform: uppercase;
+	    font-family: courier;
+	    font-size: 2.25em;
+	    line-height: 1.2;
+	    padding: 0;
+	    display:table;
+	    
+	    	span {
+	    		display: table-cell;
+	    		vertical-align: top;
+	    		position: relative;
+	    		top: 30px;
+	    		left: 30px;
+	    	}
+		}
+	
 	.three {
-		clear: left;
-    background-color: #e61c3f;
-    color: #a5142d;
-    text-transform: uppercase;
-    font-family: courier;
-    font-size: 2.25em;
-    line-height: 1.2;
-    padding: 0;
-    display:table;
-    	span {
-    		display: table-cell;
-    		vertical-align: top;
-    		position: relative;
-    		top: 30px;
-    		left: 30px;
-    	}
-	}
+		background-color:#bfabaa;
+		overflow: hidden;
+		}	
 
+	img#me {
+		position:absolute;
+		bottom:-90px;
+		left:0;
+			@media screen and (min-width: 991px) { 
+				bottom:-90px;
+				left:0;
+				}/*TAB PORTRAIT */
+	}	
 	.four {
 		background-color:#938180;
+		display:-webkit-box;
+		display:-webkit-flex;
+		display: flex;
+  		-webkit-box-align:center;
+  		-webkit-align-items:center;
+  		-webkit-box-pack:center;
+  		-webkit-justify-content: center;
+  		
+  		align-items: center;
+		img {
+			cursor:pointer;
+			display:block;
+			margin:0 auto;
+		}
+		.icon {
+			color:#000;
+			font-size:70px;
+			background-color:#dadada;
+			position: relative;
+			z-index:10;
+			-webkit-box-flex:1;
+			cursor:pointer;
+
+		}
+		.icon:hover {
+			color:#e61c3f;
+			background-color:#fff;
+		}
+		.info {
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:1;
+			
+			vertical-align: top;
+			
+			p {
+				text-align:left !important;	
+				color:#fff;
+				font-size:12px;
+			}
+		}
 	}
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479px) { /*TAB PORTRAIT */
 	.hello {
 		width:100% !important;
 		clear:both;
@@ -72,12 +125,13 @@
 	.one {
 		padding-top: 75px;
 	}
-	.two {display:none;}
+	
 
 	#hello {
 		padding-bottom: 0;
 	}
 	#hello img#me {
+		
     bottom: 0;
     left: 0px;
 	}

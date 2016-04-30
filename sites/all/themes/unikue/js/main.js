@@ -42,5 +42,7 @@
         $('.loading').fadeOut();
         $('.timer').countTo();
     });
+    
+    
 
 })(jQuery);
