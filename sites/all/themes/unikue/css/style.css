@@ -222,6 +222,9 @@ body.page-type-portfolio .dot-container {
   display: none;
 }
 
+#hello {
+  /* END FOUR */
+}
 #hello #triangle {
   position: absolute;
   top: 0px;
@@ -296,46 +299,68 @@ body.page-type-portfolio .dot-container {
 }
 #hello .four {
   background-color: #938180;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  align-items: center;
+  		/*
+  		display:-webkit-box;
+  		display:-webkit-flex;
+  		display: flex;
+    		-webkit-box-align:center;
+    		-webkit-align-items:center;
+    		-webkit-box-pack:center;
+    		-webkit-justify-content: center;
+    		
+    		align-items: center;
+    		*/
 }
 #hello .four img {
   cursor: pointer;
   display: block;
   margin: 0 auto;
 }
-#hello .four .icon {
+#hello .four .more-info-icon {
   color: #000;
   font-size: 70px;
   background-color: #dadada;
-  position: relative;
+  /*position: relative;*/
   z-index: 10;
-  -webkit-box-flex: 1;
+  /* -webkit-box-flex:1; */
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  text-align: center;
+  /*display: flex;
+  vertical-align: middle; */
+  padding-top: 15px;
 }
-#hello .four .icon:hover {
+#hello .four .more-info-icon:hover {
   color: #e61c3f;
   background-color: #fff;
 }
-#hello .four .info {
+#hello .four .fa-info:before {
+  content: "\f129";
+  /*top: 0;
+  position: relative; */
+}
+#hello .four .info-text-wrapper {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   vertical-align: top;
 }
-#hello .four .info p {
+#hello .four .info-text-wrapper p {
   text-align: left !important;
   color: #fff;
   font-size: 12px;
 }
 
+/* END HELLO */
 @media screen and (max-width: 479px) {
   /*TAB PORTRAIT */
   .hello {

@@ -73,6 +73,7 @@
 	}	
 	.four {
 		background-color:#938180;
+		/*
 		display:-webkit-box;
 		display:-webkit-flex;
 		display: flex;
@@ -82,26 +83,47 @@
   		-webkit-justify-content: center;
   		
   		align-items: center;
+  		*/
 		img {
 			cursor:pointer;
 			display:block;
 			margin:0 auto;
 		}
-		.icon {
+		.more-info-icon {
 			color:#000;
 			font-size:70px;
 			background-color:#dadada;
-			position: relative;
+			/*position: relative;*/
 			z-index:10;
-			-webkit-box-flex:1;
+			/* -webkit-box-flex:1; */
 			cursor:pointer;
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-top: -50px;
+			margin-left:-50px;
+			height:100px;
+			width:100px;
+			border-radius:50px;
+			text-align: center;
+			/*display: flex;
+			vertical-align: middle; */
+			padding-top: 15px;
 
 		}
-		.icon:hover {
+		.more-info-icon:hover {
 			color:#e61c3f;
 			background-color:#fff;
 		}
-		.info {
+		.fa-info:before {
+		    content: "\f129";
+		    /*top: 0;
+		    position: relative; */
+		}
+
+		.info-text-wrapper {
+		
+			display:none;
 			position:absolute;
 			top:0;
 			left:0;
@@ -115,8 +137,8 @@
 				font-size:12px;
 			}
 		}
-	}
-}
+	} /* END FOUR */
+} /* END HELLO */
 @media screen and (max-width: 479px) { /*TAB PORTRAIT */
 	.hello {
 		width:100% !important;
