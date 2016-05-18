@@ -1,0 +1,70 @@
+#hello {
+	width:300px;
+	margin:0 auto;
+}
+
+#hello .hello {
+  
+}
+
+#hello .four { 
+	background-color: #938180;
+	width: 100%;
+	height: 300px;
+	float: left;
+	position: relative; 
+}
+
+#hello .four .more-info-icon {
+  color: #000;
+  font-size: 70px;
+  background-color: #dadada;
+  /*position: relative;*/
+  z-index: 10;
+  /* -webkit-box-flex:1; */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  text-align: center;
+  /*display: flex;
+  vertical-align: middle; */
+  padding-top: 15px;
+}
+#hello .four .more-info-icon:hover {
+  color: #e61c3f;
+  background-color: #fff;
+}
+#hello .four .fa-info:before {
+  content: "\f129";
+  /*top: 0;
+  position: relative; */
+}
+#hello .four .info-text-wrapper {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  vertical-align: top;
+}
+#hello .four .info-text-wrapper {
+	padding:10px;
+}
+#hello .four .info-text-wrapper p {
+  text-align: left !important;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-family:'Verdana';
+  line-height: 1.5;
+
+}
+
+/* END HELLO */

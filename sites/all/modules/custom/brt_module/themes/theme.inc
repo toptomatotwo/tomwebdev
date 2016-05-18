@@ -62,6 +62,7 @@ function brt_module_preprocess_block(&$vars) {
             $scripts .= '
             (function($){
                 $(window).load(function(){
+                    /* SOME COMMENTS GO HERE */
                     jQuery("#'.$vars['block_html_id'].' .block-bg").parallax('._parallax_settings('block_bg',$settings).');
                 })
             })(jQuery);

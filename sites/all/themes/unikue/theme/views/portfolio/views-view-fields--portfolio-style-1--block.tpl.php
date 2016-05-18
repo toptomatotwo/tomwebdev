@@ -38,7 +38,7 @@ if(isset($row->field_field_portfolio_thumbnail[0])) {
                  'attributes' => array(
                    'class' => array('w-inline-block','portfolio-photo','portfolio-1'),
                    'style'=> array('background-image:url('.$thumbnail.')')),
-                 'html' => TRUE), '<div class="portfolio-photo-overlay"></div>'
+                 'html' => TRUE)
                    ); ?>
 
 </div>

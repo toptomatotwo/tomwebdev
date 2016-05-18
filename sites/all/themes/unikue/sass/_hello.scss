@@ -20,6 +20,9 @@
 		float:left;
 		position:relative;
 	}
+	.four {
+
+	}
 	@media screen and (min-width: 480px) { /*TAB PORTRAIT */
 		.hello:nth-child(3) {
 			clear:left;
@@ -122,23 +125,94 @@
 		}
 
 		.info-text-wrapper {
-		
-			display:none;
+			opacity:0;
+			display:block;
 			position:absolute;
 			top:0;
 			left:0;
 			z-index:1;
-			
+			height:300px;
+			overflow-y:scroll;
 			vertical-align: top;
-			
+			padding-bottom: 20px;
 			p {
 				text-align:left !important;	
 				color:#fff;
 				font-size:12px;
+				line-height: 20px;
 			}
-		}
+			ul#skills-list {
+				list-style-type: none;
+				color:#fff;
+				font-size:12px;	
+				}
+			}
+			::-webkit-scrollbar {
+			  width: 10px;
+			  height: 10px;
+			}
+			::-webkit-scrollbar-button {
+			  width: 0px;
+			  height: 0px;
+			}
+			::-webkit-scrollbar-thumb {
+			  /*  background: #e1e1e1; */
+			  /*background:#bfabaa;*/
+			  background:#efefef;
+			  border: 0px none #ffffff;
+			  border-radius: 26px;
+			}
+			::-webkit-scrollbar-thumb:hover {
+			  background: #a5142d;
+			} 
+			::-webkit-scrollbar-thumb:active {
+			  background: #a5142d;
+			}
+			::-webkit-scrollbar-track {
+			  background: #dadada; 
+			  border: 0px none #ffffff;
+			  border-radius: 0px;
+			}
+			/*
+			::-webkit-scrollbar-track:hover {
+			  background: #666666;
+			}
+			::-webkit-scrollbar-track:active {
+			  background: #333333;
+			} */
+			::-webkit-scrollbar-corner {
+			  background: transparent;
+			}
+			.cover-bar {
+				position:absolute;
+				right:0;
+				top:0;
+				height:100%;
+				background-color:#938180;
+				/* background-color:orange; */
+				z-index: 100;
+				width:15px;
+				opacity: 1;
+			}
+			a {
+				color:#e61c3f;
+				text-decoration:none;
+				font-weight:700;
+				&:hover{text-decoration:underline;color:orange;-webkit-transition: all .5s;}
+			}
+			/*.info-text-wrapper:hover .cover-bar {
+				opacity: 0;
+				visibility: hidden;
+  				-webkit-transition: all .5s;
+			} */
+			
 	} /* END FOUR */
 } /* END HELLO */
+	.four:hover .cover-bar {
+		opacity: 0;
+		
+		-webkit-transition: all .5s;
+	}
 @media screen and (max-width: 479px) { /*TAB PORTRAIT */
 	.hello {
 		width:100% !important;

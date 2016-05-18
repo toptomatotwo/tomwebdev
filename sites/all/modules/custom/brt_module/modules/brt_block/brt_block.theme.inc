@@ -48,6 +48,7 @@ function brt_block_preprocess_unikue_header(&$vars) {
                 $css .= '.background-overlay {'._brt_overlay_settings_to_css('ds_title_bg').'} '."\n";
             }
             if(theme_get_setting('ds_title_bg_enable_parallax_effect') == 1) {
+                echo '<script>alert("true")</script>'; 
                 $scripts .= 'jQuery(" .background").parallax('._brt_parallax_settings('ds_title_bg').')'."\n";
             }
         }

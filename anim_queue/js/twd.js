@@ -29,23 +29,12 @@
   jQuery('#info-icon').clickToggle(
     function() {   
       console.log('clicked 1');
-      jQuery('.more-info-icon').animate({top:"280", 'font-size':"14px", width:"30px", height:"30px",'margin-left':"-15px",'margin-top':"-15px","padding-top":"8px"}, { duration:200, complete: function(){jQuery('.info-text-wrapper').animate({opacity:1}, {duration:350, queue: true }); } });
+      jQuery('.more-info-icon').animate({top:"280", 'font-size':"14px", width:"30px", height:"30px",'margin-left':"-15px",'margin-top':"-15px","padding-top":"8px"}, { duration:1000, complete: function(){jQuery('.info-text-wrapper').animate({opacity:1}, {duration:1000, queue: true }); } });
       
     },
     function() {
       console.log('clicked 2');
-      jQuery('.info-text-wrapper').animate({opacity:0}, {duration:350, complete: function(){jQuery('.more-info-icon').animate({top:"50%", 'font-size':"70px", width:"100px", height:"100px",'margin-left':"-50px",'margin-top':"-50px", "padding-top":"15px"},{duration:200, queue: true });} });
+      jQuery('.info-text-wrapper').animate({opacity:0}, {duration:1000, complete: function(){jQuery('.more-info-icon').animate({top:"50%", 'font-size':"70px", width:"100px", height:"100px",'margin-left':"-50px",'margin-top':"-50px", "padding-top":"15px"},{duration:1000, queue: true });} });
       
     });
-
-  jQuery('.four').hover(
-    function(){
-      console.log("mouse enter");
-      jQuery('.cover-bar').fadeOut();
-    },
-    function(){console.log("mouse leave");jQuery('.cover-bar').fadeIn();}
-
-    )
-
-
 })

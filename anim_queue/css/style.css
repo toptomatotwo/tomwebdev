@@ -310,18 +310,6 @@ body.page-type-portfolio .dot-container {
     		
     		align-items: center;
     		*/
-  /*
-  ::-webkit-scrollbar-track:hover {
-    background: #666666;
-  }
-  ::-webkit-scrollbar-track:active {
-    background: #333333;
-  } */
-  			/*.info-text-wrapper:hover .cover-bar {
-  				opacity: 0;
-  				visibility: hidden;
-    				-webkit-transition: all .5s;
-  			} */
 }
 #hello .four img {
   cursor: pointer;
@@ -365,79 +353,15 @@ body.page-type-portfolio .dot-container {
   top: 0;
   left: 0;
   z-index: 1;
-  height: 300px;
-  overflow-y: scroll;
   vertical-align: top;
-  padding-bottom: 20px;
 }
 #hello .four .info-text-wrapper p {
   text-align: left !important;
   color: #fff;
   font-size: 12px;
-  line-height: 20px;
-}
-#hello .four .info-text-wrapper ul#skills-list {
-  list-style-type: none;
-  color: #fff;
-  font-size: 12px;
-}
-#hello .four ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-#hello .four ::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-#hello .four ::-webkit-scrollbar-thumb {
-  /*  background: #e1e1e1; */
-  /*background:#bfabaa;*/
-  background: #efefef;
-  border: 0px none #ffffff;
-  border-radius: 26px;
-}
-#hello .four ::-webkit-scrollbar-thumb:hover {
-  background: #a5142d;
-}
-#hello .four ::-webkit-scrollbar-thumb:active {
-  background: #a5142d;
-}
-#hello .four ::-webkit-scrollbar-track {
-  background: #dadada;
-  border: 0px none #ffffff;
-  border-radius: 0px;
-}
-#hello .four ::-webkit-scrollbar-corner {
-  background: transparent;
-}
-#hello .four .cover-bar {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  background-color: #938180;
-  /* background-color:orange; */
-  z-index: 100;
-  width: 15px;
-  opacity: 1;
-}
-#hello .four a {
-  color: #e61c3f;
-  text-decoration: none;
-  font-weight: 700;
-}
-#hello .four a:hover {
-  text-decoration: underline;
-  color: orange;
-  -webkit-transition: all .5s;
 }
 
 /* END HELLO */
-.four:hover .cover-bar {
-  opacity: 0;
-  -webkit-transition: all .5s;
-}
-
 @media screen and (max-width: 479px) {
   /*TAB PORTRAIT */
   .hello {

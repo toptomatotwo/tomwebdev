@@ -41,9 +41,25 @@
 
 
 <?php print $page_bottom;
-print $scripts;
+echo '<!-- script begin -->';
+//print $scripts;
+echo '<!-- script end -->';
 if (isset($footer_code)): print $footer_code; endif;
 ?>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/modules/contrib/devel/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.2"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/misc/drupal.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/misc/textarea.js?v=7.34"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/modules/contrib/field_collection/webform/js/webform.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/themes/unikue/js/jquery-migrate-1.2.1.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/themes/unikue/js/form.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/themes/unikue/js/jquery.countTo.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/themes/unikue/js/modernizr.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/themes/unikue/js/main.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/themes/unikue/js/woozy.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/themes/unikue/js/twd.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/themes/unikue/js/jquery-ui.min.js?o7163w"></script>
+<script type="text/javascript" src="http://tomwebdev.local:8083/sites/all/themes/unikue/js/wtf.js"></script>
 <script>
     
         jQuery('ul.w-nav-menu li a').click(function(){

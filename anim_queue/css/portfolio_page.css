@@ -1,0 +1,114 @@
+/* line 1, ../sass/portfolio_page.scss */
+h1.portfolio-page-title, h1.portfolio-page-title:hover {
+  text-align: left;
+  color: #777;
+  margin: 0;
+}
+
+/* line 7, ../sass/portfolio_page.scss */
+p.website-link a {
+  /* color:$lexWebDevOrange; */
+  color: #ec643e;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* line 13, ../sass/portfolio_page.scss */
+p.website-link a:hover {
+  color: red;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/*$tablet-landscape:769px 1024px; 
+$tablet-landscape-min:769px;
+$tablet-portrait:581px 768px; */
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  /* line 22, ../sass/portfolio_page.scss */
+  body.page-type-portfolio {
+    /* FOR TABLE PORTRAIT, OVERRIDES EXISTING STYLES */
+  }
+  /* line 24, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .menu-button {
+    display: none !important;
+  }
+  /* line 25, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .w-nav-brand {
+    display: inline;
+    width: inherit !important;
+  }
+  /* line 26, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button {
+    font-size: 11px;
+    padding: 10px 10px;
+    margin-left: 10px;
+  }
+  /* line 27, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single-2 {
+    font-size: 20px !important;
+  }
+  /* line 28, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single {
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 31, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .content {
+    padding-top: 0px;
+  }
+  /* line 34, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .w-col {
+    width: 100%;
+    padding-top: 20px;
+  }
+  /* line 38, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single {
+    position: relative;
+    top: 17px;
+  }
+  /* line 42, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single .button-single-2 {
+    background-color: #f6f6f6;
+  }
+  /* line 46, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single-1 {
+    display: none;
+  }
+  /* line 49, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  /* line 55, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .content {
+    padding-top: 0px;
+  }
+  /* line 58, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .w-col {
+    width: 100%;
+    padding-top: 20px;
+  }
+  /* line 62, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single {
+    position: relative;
+    top: 20px;
+  }
+  /* line 65, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single .button-single-2 {
+    background-color: #f6f6f6;
+  }
+  /* line 69, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single-1 {
+    display: none;
+  }
+  /* line 72, ../sass/portfolio_page.scss */
+  body.page-type-portfolio .button-single-3 {
+    display: none;
+  }
+}
+/* line 76, ../sass/portfolio_page.scss */
+body.page-type-portfolio .dot-container {
+  display: none;
+}
