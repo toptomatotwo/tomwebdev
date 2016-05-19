@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"
+    <?php print $rdf_namespaces; ?>>
+<head profile="<?php print $grddl_profile;?>">
+    <?php print $head; ?>
+    <title><?php print $head_title; ?></title>
+    <?php if(isset($ios_144) && $ios_144 != null) :?><link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php print $ios_144;?>"><?php endif;?>
+    <?php if(isset($ios_114) && $ios_114 != null) :?><link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php print $ios_114;?>"><?php endif;?>
+    <?php if(isset($ios_72) && $ios_72 != null) :?><link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php print $ios_72;?>"><?php endif;?>
+    <?php if(isset($ios_57) && $ios_57 != null) :?><link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php print $ios_57;?>"><?php endif;?>
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.css" rel="stylesheet">
+    <?php
+    print $styles;
+
+    global $base_url;
+    ?>
+    <style type="text/css">
+        <?php if (isset($theme_setting_css)): print $theme_setting_css; endif; ?>
+        <?php if (isset($custom_css)): print $custom_css; endif; ?>
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+    <?php if (isset($header_code)): print $header_code; endif;?>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+<!-- NEED H2 TAGS -->
+<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class="<?php print $classes; ?>" <?php print $attributes;?> >
+    
+    
+<?php print $page_top; ?>
+<?php print $page; ?>
+
+
+<?php print $page_bottom;
+
+if (isset($footer_code)): print $footer_code; endif;
+?>
+
+<script type="text/javascript" src="sites/all/modules/contrib/devel/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.2"></script>
+<script type="text/javascript" src="misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="misc/drupal.js?o7163w"></script>
+<script type="text/javascript" src="misc/textarea.js?v=7.34"></script>
+<script type="text/javascript" src="sites/all/modules/contrib/field_collection/webform/js/webform.js?o7163w"></script>
+<script type="text/javascript" src="sites/all/themes/unikue/js/jquery-migrate-1.2.1.js?o7163w"></script>
+<script type="text/javascript" src="sites/all/themes/unikue/js/form.js?o7163w"></script>
+<script type="text/javascript" src="sites/all/themes/unikue/js/jquery.countTo.js?o7163w"></script>
+<script type="text/javascript" src="sites/all/themes/unikue/js/modernizr.js?o7163w"></script>
+<script type="text/javascript" src="sites/all/themes/unikue/js/main.js?o7163w"></script>
+<script type="text/javascript" src="sites/all/themes/unikue/js/woozy.js?o7163w"></script>
+<script type="text/javascript" src="sites/all/themes/unikue/js/twd.js?o7163w"></script>
+<script type="text/javascript" src="sites/all/themes/unikue/js/jquery-ui.min.js?o7163w"></script>
+<script type="text/javascript" src="sites/all/themes/unikue/js/wtf.js"></script>
+
+<script>
+    
+        jQuery('ul.w-nav-menu li a').click(function(){
+            if(jQuery('ul.w-nav-menu').hasClass('twd')){
+                return;
+                } else {
+            jQuery('ul.w-nav-menu').slideUp('10000');
+            jQuery('.menu-button').removeClass('w--open');
+            jQuery('.w-nav-overlay').css('display', 'none');
+    
+            jQuery('.menu-button').trigger('click');
+            //close();
+            }
+        }); 
+</script>
+
+</body>
+</html>

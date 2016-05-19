@@ -368,7 +368,7 @@ body.page-type-portfolio .dot-container {
   height: 300px;
   overflow-y: scroll;
   vertical-align: top;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 #hello .four .info-text-wrapper p {
   text-align: left !important;
@@ -454,7 +454,7 @@ body.page-type-portfolio .dot-container {
   }
 
   #hello img#me {
-    bottom: 0;
+    bottom: -45px;
     left: 0px;
   }
 }
