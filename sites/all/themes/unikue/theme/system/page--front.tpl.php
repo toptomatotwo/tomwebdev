@@ -76,6 +76,13 @@
 
 
 <div id="page-wrapper">
+    <!-- manually adding LOADING, front page only -->
+
+
+
+
+
+
     <?php include_once '_top.inc';?>
     <div id="main-wrapper">
         <?php if ($messages): ?>
