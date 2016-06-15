@@ -450,7 +450,8 @@ textarea.w-select {
   display: none !important;
 }
 @media screen and (max-width: 991px) { /* TABLET LANDSCAPE MIDWAY */
-  body::before{
+  
+  /*body::before{
    content: "max-width:991 base.css"; 
 
     font-weight: bold; 
@@ -462,7 +463,7 @@ textarea.w-select {
     left: 0; 
     right: 0; 
     z-index: 99; 
-}
+} */
   .w-container {
     max-width: 728px;
   }

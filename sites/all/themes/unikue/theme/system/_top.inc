@@ -1,6 +1,6 @@
 <?php global $base_url;?>
 <div class="loading">
-    <!-- <img class="loading-gif" src="<?php print $base_url.'/'.drupal_get_path('theme','unikue')?>/img/preloader2.gif" alt="preloader2.gif"> -->
+    
   <div class="load">
   <div class="gear gearone">
     <svg id="blue" viewbox="0 0 100 100" fill="#645857">
@@ -31,7 +31,7 @@
 </div>
 <!-- navigation -->
 <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
-    <?php if(isset($menu_social)):?>
+    <?php if(isset($menu_social) && $is_front):?>
     <div class="social-div">
         <?php print $menu_social;?>
     </div>
