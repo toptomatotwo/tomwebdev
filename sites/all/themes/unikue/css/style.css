@@ -489,7 +489,7 @@ h2 {
   margin: 70px 0 10px;
   padding-bottom: 5px;
   color: #373c40;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 36px;
   font-weight: 600;
   text-align: center;
@@ -524,7 +524,6 @@ h5 {
   line-height: 20px;
   font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
 }
 
 h6 {
@@ -1131,12 +1130,12 @@ ul.w-nav-menu {
 }
 
 .nav-link {
-  padding: 14px;
+  padding: 10px;
   -webkit-transition: all 500ms ease !important;
   -o-transition: all 500ms ease !important;
   transition: all 500ms ease !important;
   color: #373c40;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   /* transition: background-color 0.5s ease !important; */
