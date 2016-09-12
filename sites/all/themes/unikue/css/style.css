@@ -33,7 +33,6 @@
 
 -----------------------------------------------------------------------------------*/
 /* 1. Boddy */
-/* TEMP */
 /*
 $navLinkSelBgColor:#ec643e;
 */
@@ -458,14 +457,9 @@ body.page-type-portfolio .dot-container {
     left: 0px;
   }
 }
-.w-container {
-  /* border-left: 1px solid #000;
-  border-right: 1px solid #000; */
-}
-
 body {
   padding-top: 90px;
-  font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #333;
   font-size: 14px;
   line-height: 20px;
@@ -1109,9 +1103,21 @@ ul.w-nav-menu {
   float: none;
   border: 0px solid red;
   padding-left: 0;
-  width: 50%;
+  width: 100%;
   /* margin-left: 50% */
-  display: inline;
+  display: table;
+  text-align: justify;
+}
+
+ul.w-nav-menu:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+li.leaf {
+  display: table-cell !important;
+  text-align: center;
 }
 
 .navbar {
@@ -1130,12 +1136,12 @@ ul.w-nav-menu {
 }
 
 .nav-link {
-  padding: 10px;
+  padding: 11px;
   -webkit-transition: all 500ms ease !important;
   -o-transition: all 500ms ease !important;
   transition: all 500ms ease !important;
   color: #373c40;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   /* transition: background-color 0.5s ease !important; */
